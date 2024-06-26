@@ -49,6 +49,8 @@ function App() {
       const path = link.split("/")[3]
       id=path.split("?")[0]
       // console.log("For dots Video=>", id);
+      toast.success("Link is Valid..")
+
     } 
     else
     {
