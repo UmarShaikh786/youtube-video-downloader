@@ -27,23 +27,31 @@ function App() {
           const shared = link.split("/")[4]
           id=shared.slice(0,11)
           // console.log("for Shared shorts=>",id)
+          toast.success("Link is Valid..")
+
         }else
         {
           const shared = link.split("/")[3]
 
           id=shared.slice(0,11)
           // console.log("for Shared video=>",id)
+          toast.success("Link is Valid..")
+
         }
     }
     else if (link.includes("/shorts/")) {
       const path = link.split("/shorts/")[1];
         id=path.slice(0,11)
       // console.log("For Browse short=>",id)
+      toast.success("Link is Valid..")
+
     } 
     else if (link.includes("?v=")) {
       const path = link.split("=")[1];
       id=path.slice(0,11)
       // console.log("For browse Video=>",id)
+      toast.success("Link is Valid..")
+
     }
     else if (link.includes("?si=")) {
       const path = link.split("/")[3]
