@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -24,6 +25,35 @@
   color: white;
 }
 
+input{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 18rem;
+  
+
+}
+button{
+  margin-right: 20px;
+  padding: 10px;
+  /* margin: 10px; */
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #282c34;
+  color: white;
+  cursor: pointer;
+}
+h2{
+  margin-bottom: 20px;
+  
+}
+button:active{
+  background-color: red;
+}
 .App-link {
   color: #61dafb;
 }
