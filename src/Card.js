@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 function Card({ videoData }) {
   const [links, setLinks] = useState([]);
@@ -30,7 +31,7 @@ console.log(videoData)
               <p className="card-text" align='center'> {index+1}</p>
               <p className="card-text">Size: {link.size}</p>
               <p className="card-text">Quality: {link.quality}</p>
-              Link: <a key={index} href={link.link} target="_blank" rel="noreferrer">
+             Download Link: <a key={index} href={link.link} target="_blank" onClick={()=>toast.success("Downloading start...")} rel="noreferrer">
                 {link.link.split("=")[0]}
               </a>
               </div>
